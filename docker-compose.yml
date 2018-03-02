@@ -12,8 +12,8 @@ services:
   postgres:
     container_name: secmonkey-db
     image: postgres:10.1
-    #volumes:
-    #  - ./postgres-data/:/var/lib/postgresql/data
+    volumes:
+      - ./postgres-data/:/var/lib/postgresql/data
 
   redis:
       container_name: secmonkey-redis
